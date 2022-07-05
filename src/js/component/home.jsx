@@ -1,14 +1,14 @@
 import React from "react";
-import Counter from "./counter";
+import { render } from "react-dom";
+import Secondscounter from "./counter";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
-//create your first component
 const Home = () => {
-	return (
-		<Counter />
-	);
+	
+	window.onload = function() {
+		let counter = 0;
+		let intervalo = window.setInterval(return(<Secondscounter seconds={counter} />), 1000);
+		
+	}	
 };
 
 export default Home;
