@@ -8,13 +8,13 @@ const Secondscounter = (props) => {
     
     return (
         <div className="d-flex mt-3 justify-content-center counter container-fluid">
-            <div className="col-md-1"><i className="fa-regular fa-clock"></i></div>
-            <div className="col-md-1 centenamil">{arr[0]}</div>
-            <div className="col-md-1 decenamil">{arr[1]}</div>
-            <div className="col-md-1 mil">{arr[2]}</div>
-            <div className="col-md-1 centena">{arr[3]}</div>
-            <div className="col-md-1 decena">{arr[4]}</div>
-            <div className="col-md-1 unidad">{arr[5]}</div>
+            <span className="badge text-bg-dark"><i className="fa-regular fa-clock"></i></span>
+            <span className="badge text-bg-dark">{arr[0]}</span>
+            <span className="badge text-bg-dark">{arr[1]}</span>
+            <span className="badge text-bg-dark">{arr[2]}</span>
+            <span className="badge text-bg-dark">{arr[3]}</span>
+            <span className="badge text-bg-dark">{arr[4]}</span>
+            <span className="badge text-bg-dark">{arr[5]}</span>
         </div>
     )
 }
